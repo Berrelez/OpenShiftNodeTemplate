@@ -1,22 +1,20 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "OpenShift Node Express App",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Feel free to make it better. I did.",
   "keywords": [
     "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
+    "Node.js"
   ],
   "author": {
-    "name": "ATUL",
-    "email": "atulanand94@gmail.com",
-    "url": "http://www.openshift.com/"
+    "name": "Brian Berrelez",
+    "email": "bberrelez@outlook.com",
+    "url": "http://www.illcomplacent.com/"
   },
-  "homepage": "http://www.openshift.com/",
+  "homepage": "http://www.illcomplacent.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/Berrelez/OpenShiftNodeTemplate"
   },
   "engines": {
     "node": ">= 0.6.0",
@@ -28,7 +26,6 @@
     "debug": "^2.2.0",
     "ejs": "^2.3.4",
     "express": "^4.14.0",
-    "express-sanitizer": "^1.0.1",
     "express-session": "^1.14.0",
     "helmet": "^2.1.2",
     "morgan": "^1.7.0",

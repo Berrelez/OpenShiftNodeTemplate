@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var helmet = require('helmet');
-var sanitizer = require('express-sanitizer');
 
 //Import routes
 var routes = require('./routes/index');
@@ -19,10 +18,10 @@ app.use(helmet.xssFilter());
 app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],
-    scriptSrc: ["'self'",'maxcdn.bootstrapcdn.com'],
-    styleSrc: ["'self'","'unsafe-inline'",'maxcdn.bootstrapcdn.com'],
+    scriptSrc: ["'self'","'unsafe-inline'",'https://maxcdn.bootstrapcdn.com'],
+    styleSrc: ["'self'","'unsafe-inline'",'https://maxcdn.bootstrapcdn.com'],
     imgSrc: ["'self'"],
-    fontSrc: ['maxcdn.bootstrapcdn.com'],
+    fontSrc: ['https://maxcdn.bootstrapcdn.com'],
     connectSrc: [],
   },
 
